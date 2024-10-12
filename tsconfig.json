@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "lib": ["es2021"],
+    "baseUrl": ".",
+    "paths": {
+      "@api/*": ["src/api/*"],
+      "@xgraphql/*": ["src/graphql/*"],
+      "@xtypes/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"],
+      "@service/*": ["src/service/*"],
+      "@data-sources/*": ["src/data-sources/*"],
+      "@resources/*": ["resources/*"]
+    },
+    "outDir": "dist",
+    "declaration": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "rootDir": ".",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noErrorTruncation": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
