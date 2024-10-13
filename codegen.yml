@@ -1,0 +1,15 @@
+overwrite: true
+schema: 'resources/schema.graphql'
+generates:
+  src/types/resolver-types.ts:
+    config:
+      defaultMapper: Partial<{T}>
+      namingConvention:
+        enumValues: keep
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+        - eslint --fix
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'

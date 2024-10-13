@@ -1,5 +1,11 @@
-import { NextFunction, Request, Response, RequestHandler } from 'express'
+import { NextFunction, Request, Response } from "express";
 
-export default function getHelloWorld(req: Request, res: Response, next: NextFunction) {
-  res.json('Hello World')
+export default function getHelloWorld(
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) {
+  // Send response.
+  res.json("Hello World");
+  return next();
 }
