@@ -8,8 +8,7 @@
       "@xgraphql/*": ["src/graphql/*"],
       "@xtypes/*": ["src/types/*"],
       "@utils/*": ["src/utils/*"],
-      "@service/*": ["src/service/*"],
-      "@data-sources/*": ["src/data-sources/*"],
+      "@tests/*": ["src/tests/*"],
       "@resources/*": ["resources/*"]
     },
     "outDir": "dist",
@@ -26,6 +25,5 @@
     "resolveJsonModule": true,
     "noErrorTruncation": true
   },
-  "include": ["src"],
   "exclude": ["node_modules", "/dist/**"]
 }
